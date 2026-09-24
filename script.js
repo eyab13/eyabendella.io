@@ -1,6 +1,6 @@
 // 1) AJAX: load projects from a JSON file
 const list = document.getElementById('project-list');
-fetch('data/projects.json')
+fetch('projects.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(projects => {
     list.innerHTML = '';
