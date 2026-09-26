@@ -3,83 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eya Ben Della | Technical Project Manager, MES/QMES/LIMS</title>
+<title data-i18n="meta.title">Eya Ben Della | Technical Project Manager, MES/QMES/LIMS</title>
 <meta name="description" content="Technical Project Manager delivering LIMS, QMES and MES solutions for industrial clients across Europe, Africa, Asia and Latin America.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="bg-scene" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
 <header class="bar">
   <a href="#top" class="logo">Eya Ben Della</a>
-  <nav><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <nav>
+    <a href="#projects" data-i18n="nav.projects">Projects</a>
+    <a href="#experience" data-i18n="nav.experience">Experience</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <span class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="lang-btn is-active">EN</button>
+      <button type="button" data-lang="fr" class="lang-btn">FR</button>
+    </span>
+  </nav>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <h1>I take industrial software from requirements to a stable production floor.</h1>
-    <p class="lead">Technical Project Manager with 4+ years delivering LIMS, QMES and MES solutions for manufacturing and laboratory clients in Europe, Africa, Asia and Latin America. I lead 10+ developers, own the client relationship and stay through post-delivery support.</p>
-    <p class="cta"><a class="btn" href="#contact">Get in touch</a> <a class="btn ghost" href="Eya_Ben_Della.pdf">Download CV</a></p>
+  <section class="hero" data-theme="cream">
+    <p class="status"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.status">Open to relocate — Dubai, UAE</span></p>
+    <h1 data-i18n="hero.title">I take industrial software from requirements to a stable production floor.</h1>
+    <p class="lead" data-i18n="hero.lead">Technical Project Manager with 4+ years delivering LIMS, QMES and MES solutions for manufacturing and laboratory clients in Europe, Africa, Asia and Latin America. I lead 10+ developers, own the client relationship and stay through post-delivery support.</p>
+    <p class="cta"><a class="btn" href="#contact" data-i18n="hero.ctaContact">Get in touch</a> <a class="btn ghost" href="Eya_Ben_Della.pdf" data-i18n="hero.ctaCv">Download CV</a></p>
     <ul class="results">
-      <li><strong>75%</strong> lower scrap rate on a weight-based production control system</li>
-      <li><strong>55%</strong> fewer incidents after a cross-client incident tracking workflow</li>
-      <li><strong>100,000+</strong> daily production events visualised in KPI dashboards</li>
+      <li><strong>10</strong> <span data-i18n="stats.clients">satisfied clients</span></li>
+      <li><strong>10+</strong> <span data-i18n="stats.projects">projects delivered — 4 full end-to-end projects and 1 mini project</span></li>
+      <li><strong>10+</strong> <span data-i18n="stats.team">team members managed</span></li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Selected projects</h2>
-    <div id="project-list" aria-live="polite"><p class="muted">Loading projects…</p></div>
+  <section id="projects" data-theme="chocolate">
+    <h2 data-i18n="projects.heading">Selected projects</h2>
+    <p class="muted" data-i18n="projects.hint">Hover a project to expand it.</p>
+    <div id="project-list" class="project-grid" aria-live="polite"><p class="muted" data-i18n="projects.loading">Loading projects…</p></div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
+  <section id="ai" data-theme="navy">
+    <h2 data-i18n="ai.heading">AI &amp; automation</h2>
+    <ul class="check-list">
+      <li data-i18n="ai.p1">Certified in AI prompting (1 Million Prompters, 2026) and use it daily to speed up delivery documentation and analysis.</li>
+      <li data-i18n="ai.p2">Built automated reporting and alerting with N8N and Grafana, replacing manual status checks with live KPI dashboards.</li>
+      <li data-i18n="ai.p3">Designed event-driven integrations between ERP/MES systems so operational data updates and triggers actions automatically.</li>
+      <li data-i18n="ai.p4">Use AI tools to draft technical documentation, summarise incidents and prepare client-ready reports faster.</li>
+    </ul>
+  </section>
+
+  <section id="experience" data-theme="chocolate">
+    <h2 data-i18n="experience.heading">Experience</h2>
     <article class="job">
-      <h3>Technical Project Manager, BQUBE ITS</h3><p class="muted">Nov 2025 to present</p>
+      <h3 data-i18n="experience.job1.title">Technical Project Manager, BQUBE ITS</h3><p class="muted" data-i18n="experience.job1.dates">Nov 2025 to present</p>
       <ul>
-        <li>Lead end-to-end delivery of 5+ MES solutions for global industrial clients.</li>
-        <li>Coordinate a team of 10+, balancing priorities, dependencies and risks across multiple projects.</li>
-        <li>Oversee SLAs, incidents and root-cause analysis, and manage the handover from project to production operations.</li>
-        <li>Built KPI dashboards and automated alerts that give stakeholders real-time visibility.</li>
+        <li data-i18n="experience.job1.b1">Lead end-to-end delivery of 5+ MES solutions for global industrial clients.</li>
+        <li data-i18n="experience.job1.b2">Coordinate a team of 10+, balancing priorities, dependencies and risks across multiple projects.</li>
+        <li data-i18n="experience.job1.b3">Oversee SLAs, incidents and root-cause analysis, and manage the handover from project to production operations.</li>
+        <li data-i18n="experience.job1.b4">Built KPI dashboards and automated alerts that give stakeholders real-time visibility.</li>
       </ul>
     </article>
     <article class="job">
-      <h3>Technical Lead / Full-Stack Developer, BQUBE ITS</h3><p class="muted">Jun 2022 to Oct 2025</p>
+      <h3 data-i18n="experience.job2.title">Technical Lead / Full-Stack Developer, BQUBE ITS</h3><p class="muted" data-i18n="experience.job2.dates">Jun 2022 to Oct 2025</p>
       <ul>
-        <li>Delivered LIMS and QMES applications for clients in 5+ countries, in 4+ languages.</li>
-        <li>Designed REST APIs and integrations between business applications and operational systems.</li>
-        <li>Improved deployment efficiency by up to 70% through standardisation and closer team coordination.</li>
+        <li data-i18n="experience.job2.b1">Delivered LIMS and QMES applications for clients in 5+ countries, in 4+ languages.</li>
+        <li data-i18n="experience.job2.b2">Designed REST APIs and integrations between business applications and operational systems.</li>
+        <li data-i18n="experience.job2.b3">Improved deployment efficiency by up to 70% through standardisation and closer team coordination.</li>
       </ul>
     </article>
-    <p class="muted">Education: B.Sc. Computer Science Engineering and Information Systems, Faculty of Sciences of Tunis (2019 to 2022). Training: SAFe, Scrum coaching, PMP preparation. Languages: Arabic (native), French (C1), English (C1), Spanish (conversational).</p>
+    <p class="muted" data-i18n="experience.footnote">Education: B.Sc. Computer Science Engineering and Information Systems, Faculty of Sciences of Tunis (2019 to 2022). Training: SAFe, Scrum coaching, PMP preparation. Languages: Arabic (native), French (C1), English (C1), Spanish (conversational).</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
+  <section id="skills" data-theme="cream">
+    <h2 data-i18n="skills.heading">Skills</h2>
     <dl class="skills">
-      <dt>Delivery</dt><dd>Agile, Scrum, SAFe, Kanban, Jira, Confluence, risk and stakeholder management</dd>
-      <dt>Architecture</dt><dd>REST API design, microservices, ERP/MES integration, IoT data, event-driven systems</dd>
-      <dt>Back end</dt><dd>PHP, Python, Java, JWT, PostgreSQL, MongoDB</dd>
-      <dt>Front end</dt><dd>Angular, React, TypeScript, JavaScript, PWA</dd>
-      <dt>Reporting</dt><dd>Grafana, N8N, GLPI, Excel</dd>
+      <dt data-i18n="skills.delivery.term">Delivery</dt><dd data-i18n="skills.delivery.def">Agile, Scrum, SAFe, Kanban, Jira, Confluence, risk and stakeholder management</dd>
+      <dt data-i18n="skills.architecture.term">Architecture</dt><dd data-i18n="skills.architecture.def">REST API design, microservices, ERP/MES integration, IoT data, event-driven systems</dd>
+      <dt data-i18n="skills.backend.term">Back end</dt><dd data-i18n="skills.backend.def">PHP, Python, Java, JWT, PostgreSQL, MongoDB</dd>
+      <dt data-i18n="skills.frontend.term">Front end</dt><dd data-i18n="skills.frontend.def">Angular, React, TypeScript, JavaScript, PWA</dd>
+      <dt data-i18n="skills.reporting.term">Reporting</dt><dd data-i18n="skills.reporting.def">Grafana, N8N, GLPI, Excel</dd>
     </dl>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Open to Technical Project Manager, MES/ERP consulting and Industry 4.0 roles in the UAE. Email <a href="mailto:eyabendanna@gmail.com">eyabendanna@gmail.com</a> or use the form.</p>
-    <form id="contact-form" action="contact.php" method="post" novalidate>
-      <label>Name <input name="name" required autocomplete="name"></label>
-      <label>Email <input name="email" type="email" required autocomplete="email"></label>
-      <label>Message <textarea name="message" rows="5" required></textarea></label>
+  <section id="soft-skills" data-theme="chocolate">
+    <h2 data-i18n="soft.heading">Soft skills</h2>
+    <dl class="skills">
+      <dt data-i18n="soft.leadership.term">Leadership</dt><dd data-i18n="soft.leadership.def">Leading and mentoring teams of 10+ developers across multiple concurrent projects</dd>
+      <dt data-i18n="soft.stakeholder.term">Stakeholder management</dt><dd data-i18n="soft.stakeholder.def">Acting as the main technical point of contact for international clients and internal teams</dd>
+      <dt data-i18n="soft.communication.term">Communication</dt><dd data-i18n="soft.communication.def">Working across cultures and 4+ languages: Arabic, French, English and Spanish</dd>
+      <dt data-i18n="soft.problem.term">Problem solving</dt><dd data-i18n="soft.problem.def">Root-cause analysis and calm escalation handling under production pressure</dd>
+      <dt data-i18n="soft.adapt.term">Adaptability</dt><dd data-i18n="soft.adapt.def">Delivering in fast-changing, multi-country Industry 4.0 environments</dd>
+    </dl>
+  </section>
+
+  <section id="contact" data-theme="cream">
+    <h2 data-i18n="contact.heading">Contact</h2>
+    <p><span data-i18n="contact.lead">Open to Technical Project Manager, MES/ERP consulting and Industry 4.0 roles in the UAE. Email</span> <a href="mailto:eyabendanna@gmail.com">eyabendanna@gmail.com</a><span data-i18n="contact.leadEnd"> or use the form.</span></p>
+    <!-- Replace YOUR_FORM_ID with your own Formspree endpoint (see deployment notes) so messages arrive directly in your inbox. -->
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+      <label><span data-i18n="contact.name">Name</span> <input name="name" required autocomplete="name"></label>
+      <label><span data-i18n="contact.email">Email</span> <input name="email" type="email" required autocomplete="email"></label>
+      <label><span data-i18n="contact.subject">Subject</span> <input name="subject" required></label>
+      <label><span data-i18n="contact.message">Message</span> <textarea name="message" rows="5" required></textarea></label>
       <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="btn" type="submit">Send message</button>
+      <button class="btn" type="submit" data-i18n="contact.send">Send message</button>
       <p id="form-status" role="status"></p>
     </form>
   </section>
 </main>
 <footer><p>© 2026 Eya Ben Della · Tunisia · +216 93 367 929</p></footer>
-<script src="script.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
