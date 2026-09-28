@@ -41,7 +41,7 @@ function renderProjects(lang) {
   });
 }
 
-fetch('projects.json')
+fetch('./projects.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(projects => { projectsData = projects; renderProjects(currentLang); })
   .catch(() => {
