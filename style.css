@@ -81,8 +81,16 @@ h3{font-size:1.05rem;font-weight:700}
 section{padding-block:3.75rem}
 main>section{border-top:1px solid var(--line)}
 main>section:first-child{border-top:none}
-main>section:nth-of-type(even){background:rgba(255,255,255,.4);backdrop-filter:blur(6px)}
-main>section:nth-of-type(odd):not(.hero){background:rgba(239,226,202,.4);backdrop-filter:blur(4px)}
+main>section:nth-of-type(even){
+   /*
+   background:rgba(255,255,255,.4);
+   */
+   backdrop-filter:blur(6px)}
+main>section:nth-of-type(odd):not(.hero){
+   /*
+   background:rgba(239,226,202,.4);
+   */
+   backdrop-filter:blur(4px)}
 .hero{padding-top:3rem;background:transparent}
 
 /* status HUD line */
