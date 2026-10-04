@@ -3,7 +3,7 @@ const translations = {
   en: {
     "meta.title": "Eya Ben Della | Technical Project Manager, MES/QMES/LIMS",
     "nav.projects": "Projects", "nav.experience": "Experience", "nav.skills": "Skills", "nav.contact": "Contact",
-    "hero.status": "Open to relocate — Dubai, UAE",
+    "hero.status": "Open to relocate",
     "hero.title": "I take industrial software from requirements to a stable production floor.",
     "hero.lead": "Technical Project Manager with 4+ years delivering LIMS, QMES and MES solutions for manufacturing and laboratory clients in Europe, Africa, Asia and Latin America. I lead 10+ developers, own the client relationship and stay through post-delivery support.",
     "hero.ctaContact": "Get in touch", "hero.ctaCv": "Download CV",
