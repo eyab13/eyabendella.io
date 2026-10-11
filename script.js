@@ -1,5 +1,5 @@
 let currentLang = localStorage.getItem('lang') || 'en';
-let projects = [];
+let projectsData = [];
 fetch('./projects.json')
     .then(response => {
         if (!response.ok) {
