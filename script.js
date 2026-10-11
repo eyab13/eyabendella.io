@@ -13,7 +13,7 @@ fetch('./projects.json')
 
         // Access the projects array
         projectsData = data;
-
+console.log("inside ", projectsData);
         // Do something with the projects
         projects.forEach(project => {
             console.log(project.name);
@@ -22,7 +22,7 @@ fetch('./projects.json')
     .catch(error => {
         console.error('Error:', error);
     });
-
+console.log("outside ", projectsData);
 const projectsData2 = [
 
  {
