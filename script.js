@@ -20,7 +20,7 @@ async function loadProjects() {
 async function init() {
     await loadProjects();
 
-    displayProjects();
+    renderProjects(lang);
 }
 init();
 const projectsData2 = [
