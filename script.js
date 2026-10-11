@@ -1,4 +1,5 @@
 let currentLang = localStorage.getItem('lang') || 'en';
+const projectsData;
 fetch('./projects.json')
     .then(response => {
         if (!response.ok) {
@@ -11,7 +12,7 @@ fetch('./projects.json')
         console.log(data);
 
         // Access the projects array
-        const projectsData = data;
+        projectsData = data;
 
         // Do something with the projects
         projects.forEach(project => {
@@ -21,6 +22,7 @@ fetch('./projects.json')
     .catch(error => {
         console.error('Error:', error);
     });
+
 const projectsData2 = [
 
  {
