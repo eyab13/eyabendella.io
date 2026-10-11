@@ -11,7 +11,7 @@ fetch('./projects.json')
         console.log(data);
 
         // Access the projects array
-        const projectsData = data.projects;
+        const projectsData = data;
 
         // Do something with the projects
         projects.forEach(project => {
