@@ -15,9 +15,6 @@ fetch('./projects.json')
         projectsData = data;
 console.log("inside ", projectsData);
         // Do something with the projects
-        projects.forEach(project => {
-            console.log(project.name);
-        });
     })
     .catch(error => {
         console.error('Error:', error);
