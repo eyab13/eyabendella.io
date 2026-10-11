@@ -8,7 +8,7 @@ fetch('./projects.json')
         return response.json();
     })
     .then(data => {
-        console.log(data.projects);
+        console.log(data);
 
         // Access the projects array
         const projectsData = data.projects;
