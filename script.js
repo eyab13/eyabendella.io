@@ -1,5 +1,27 @@
 let currentLang = localStorage.getItem('lang') || 'en';
-const projectsData = [
+fetch('./projects.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to load projects.json');
+        }
+
+        return response.json();
+    })
+    .then(data => {
+        console.log(data.projects);
+
+        // Access the projects array
+        const projectsData = data.projects;
+
+        // Do something with the projects
+        projects.forEach(project => {
+            console.log(project.name);
+        });
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+const projectsData2 = [
 
  {
   "title_en":"Laboratory Management System (LIMS)","title_fr":"Système de Gestion de Laboratoire (LIMS)",
