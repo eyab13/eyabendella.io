@@ -1,25 +1,28 @@
 let currentLang = localStorage.getItem('lang') || 'en';
 let projectsData = [];
-fetch('./projects.json')
-    .then(response => {
+async function loadProjects() {
+    try {
+        const response = await fetch('./projects.json');
+
         if (!response.ok) {
-            throw new Error('Failed to load projects.json');
+            throw new Error('Unable to load projects');
         }
 
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
+        const data = await response.json();
 
-        // Access the projects array
         projectsData = data;
-console.log("inside ", projectsData);
-        // Do something with the projects
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-console.log("outside ", projectsData);
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+async function init() {
+    await loadProjects();
+
+    displayProjects();
+}
+init();
 const projectsData2 = [
 
  {
