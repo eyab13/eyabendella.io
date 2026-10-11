@@ -57,6 +57,8 @@ function applyTranslations(lang) {
 function t(key) { return (translations[currentLang] && translations[currentLang][key]) || key; }
 
 function renderProjects(lang) {
+ console.log(projectsData);
+ console.table(projectsData);
   const list = document.getElementById('project-list');
   if (!projectsData.length) {
     list.innerHTML = `<p class="muted">${t('projects.error')}</p>`;
